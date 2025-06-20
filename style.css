@@ -150,19 +150,198 @@ footer {
 footer a .logo {
     height: 56px;
     border-radius: 0;
+    filter: brightness(0) invert(1);
 }
 
-footer .social img {
+footer .socials img {
     border-radius: 0;
-    height: 32px;
-
+    height: 40px;
+    border-radius: 5px;
 }
 
-footer .social {
+footer .socials {
     display: flex;
     align-items: center;
     gap: 16px;
 }
+
+
+/* Part von Jule  */
+
+h1 {
+  font-size: 32px;
+  padding-bottom: 24px;
+}
+
+h3 {
+  padding-bottom: 24px;
+}
+
+input {
+  height: 40px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 8px;
+  border-width: 1px;
+  border-color: #EFEFEF;
+  border-style: solid;
+  border-radius: 8px 0 0 8px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  background-color: #008000;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.ingredient-table {
+  font-size: 24px;
+  width: 100%;
+  padding-top: 24px;
+}
+
+.table-data {
+  border-radius: 16px;
+  height: 64px;
+  padding-left: 32px;
+}
+
+tr:nth-child(odd) {
+  background-color: #EFEFEF;
+}
+
+hr {
+  background-color: #EFEFEF;
+  border-width: 0;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 16px;
+  margin-top: 64px;
+}
+
+textarea {
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+  resize: vertical;
+  padding: 8px;
+}
+
+.meal {
+  padding: 100px 100px 0 100px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.info {
+  padding-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.meal-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #EFEFEF;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.meal-info img {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+
+.ingredients {
+  padding: 0 100px 32px 100px;
+}
+
+.portions {
+  display: flex;
+  align-items: center;
+}
+
+.portions span {
+  padding-right: 8px;
+}
+
+.preperation {
+  padding: 0 100px 32px 100px;
+}
+
+.preperation p {
+  margin-top: 24px;
+}
+
+.created-by {
+  padding: 0 100px 32px 100px;
+}
+
+.created-by img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #DCDCDC;
+  gap: 32px;
+  padding: 16px;
+  border-radius: 16px;
+  width: 500px;
+}
+
+.contact-form input {
+  height: 32px;
+  width: auto;
+  border-radius: 8px;
+  font-weight: 300;
+}
+
+.contact-form button {
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.your-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 
 @media(max-width:1000px) {}
 

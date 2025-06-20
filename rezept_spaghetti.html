@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_global.css">
 </head>
 
 <body>
-    <header></header>
+    <nav>
+        <div>
+            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Kochwelt Logo"></a>
+        </div>
+        <div class="navbar">
+            <a class="nav-link" href="index.html">Start</a>
+            <a class="nav-link" href="rezept_pasta.html">Rezept des Tages</a>
+            <a class="nav-link" href="#">Kontakt</a>
+            <a class="nav-link" href="#">Impressum</a>
+            <a href="#" class="d_none"></a>
+        </div>
+    </nav>
 
     <section class="meal">
         <h1>Spaghetti Bolognese</h1>
@@ -38,44 +50,44 @@
             <button>Portionen</button>
         </div>
         <div>
-            <table>
+            <table class="ingredient-table">
                 <tr>
                     <!-- <td>1</td> -->
-                    <td><span class="amount">1 </span>Zwiebel</td>
+                    <td class="table-data"><span class="amount">1 </span>Zwiebel</td>
                 </tr>
                 <tr>
                     <!-- <td>1</td> -->
-                    <td><span class="amount">1 </span>Knoblauch</td>
+                    <td class="table-data"><span class="amount">1 </span>Knoblauch</td>
                 </tr>
                 <tr>
                     <!-- <td>500g</td> -->
-                    <td><span class="amount">500</span>g Rinderhackfleisch</td>
+                    <td class="table-data"><span class="amount">500</span>g Rinderhackfleisch</td>
                 </tr>
                 <tr>
                     <!-- <td>200ml</td> -->
-                    <td><span class="amount">200</span>ml Rinderbrühe</td>
+                    <td class="table-data"><span class="amount">200</span>ml Rinderbrühe</td>
                 </tr>
                 <tr>
                     <!-- <td>2 EL</td> -->
-                    <td><span class="amount">2</span> EL Tomatenmark</td>
+                    <td class="table-data"><span class="amount">2</span> EL Tomatenmark</td>
                 </tr>
                 <tr>
                     <!-- <td>400g</td> -->
-                    <td><span class="amount">400</span>g passierte Tomaten</td>
+                    <td class="table-data"><span class="amount">400</span>g passierte Tomaten</td>
                 </tr>
                 <tr>
                     <!-- <td>500g</td> -->
-                    <td><span class="amount">500</span>g Spaghetti</td>
+                    <td class="table-data"><span class="amount">500</span>g Spaghetti</td>
                 </tr>
                 <tr>
                     <!-- <td>1 TL</td> -->
-                    <td><span class="amount">1</span> TL Oregano</td>
+                    <td class="table-data"><span class="amount">1</span> TL Oregano</td>
                 </tr>
                 <tr>
-                    <td>Salz & Pfeffer</td>
+                    <td class="table-data">Salz & Pfeffer</td>
                 </tr>
                 <tr>
-                    <td>Olivenöl</td>
+                    <td class="table-data">Olivenöl</td>
                 </tr>
             </table>
         </div>
@@ -110,7 +122,7 @@
 
     <footer>
         <div>
-            <img class="logo" src="./img/logo.png" alt="Logo">
+            <a href=""><img class="logo" src="./img/logo.png" alt="Logo"></a>
         </div>
         <div class="socials">
             <img src="./img/facebook.png" alt="Find us on Facebook">

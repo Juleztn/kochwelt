@@ -13,7 +13,7 @@
     --button-hover-color: rgb(61, 158, 61);
     --link-hover-color: #008000;/* same as button-bg-color */
     --main-bg-light-gray: #EFEFEF;
-    --footer-color: #403B3B;/* rgb(64, 59, 59) */
+    --footer-color: #232323;/* rgb(64, 59, 59) */
     font-family: 'Raleway', sans-serif;
     color: var(--txt-color);
 }
