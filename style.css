@@ -140,7 +140,6 @@ main img {
 /* Footer SECTION */
 
 footer {
-    /* padding: 36px 8vw 36px 8vw; */
     height: 118px;
     padding: 0 80px;
     background-color: var(--footer-color);
@@ -150,19 +149,19 @@ footer {
 
 }
 
-footer a .logo {
+.logo {
     height: 56px;
     border-radius: 0;
     filter: brightness(0) invert(1);
 }
 
-footer .socials img {
+.socials img {
     border-radius: 0;
     height: 40px;
     border-radius: 5px;
 }
 
-footer .socials {
+.socials {
     display: flex;
     align-items: center;
     gap: 16px;
