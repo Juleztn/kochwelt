@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
     <link rel="stylesheet" href="style_jule.css">
+    
+    <link rel="stylesheet" href="style_global.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <!-- INDEX NAVIGATION SECTION -->
+
+        <nav>
+            <div>
+                <a href="#"><img class="logo" src="./img/logo.png" alt="Kochwelt Logo"></a>
+            </div>
+            <div class="navbar">
+                <a class="nav-link" href="#">Start</a>
+                <a class="nav-link" href="rezept_pasta.html">Rezept des Tages</a>
+                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="#">Impressum</a>
+                <a href="#" class="d_none"></a>
+            </div>
+        </nav>
+
+    </header>
 
     <section class="meal">
         <h1>Spaghetti Bolognese</h1>
@@ -34,8 +53,9 @@
         <hr>
         <div class="portions">
             <span>Zutaten für</span>
-            <input onchange="changePortions()" class="select-portion" min="1" max="20" type="number" value="4">
-            <button>Portionen</button>
+            <input onchange="calculatePortions()" id="portion-value" class="select-portion" min="1" max="20"
+                type="number" value="4">
+            <button type="submit">Portionen</button>
         </div>
         <div>
             <table>
