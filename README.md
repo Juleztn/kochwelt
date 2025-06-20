@@ -26,21 +26,20 @@ die über den geforderten Projektumfang hinausgehen, um spezifisches Feedback da
 	Was passiert bei leeren Inputs?
 	Nutzt ein Burger Menü in der Responsive Ansicht für die Links im Header.
 	Die Hauptseite muss index.html heißen, damit sie standardmäßig geladen wird.
-
+<br>
 <h3>Design</h3>
-
-	Bitte setze das Design 1:1 um. Wenn es für die entsprechende Seite kein Design gibt, 
-  kannst du kreativ werden (nutze ggf. Google hierfür), orientiere dich aber bitte an den gegebenen Designs.
-	
-  Header und Footer sind überall gleich und funktionieren.
+<br>
+	<input type="checkbox" checked="false">Bitte setze das Design 1:1 um. Wenn es für die entsprechende Seite kein Design gibt, 
+  kannst du kreativ werden (nutze ggf. Google hierfür), orientiere dich aber bitte an den gegebenen Designs.<br>
+	<input type="checkbox" checked="false">Header und Footer sind überall gleich und funktionieren.<br>
 	Richtige Schriftart ausgewählt & lokal eingebunden
 	Transitions: 75ms - 125ms wenn anklickbar
 	Favicon vorhanden
 	Haben Buttons die CSS Eigenschaft cursor: pointer; ?
 	Buttons sind überall gleich
-
+<br>
 <h3>Responsiveness</h3>
-
+<br>
 	Die Seite funktioniert auf Desktop Geräten und in der mobilen Ansicht bis 320 px
 	Jede Seite ist responsive
 	Kein horizontaler Scrollbalken bei kleineren Auflösungen auf der Seite
