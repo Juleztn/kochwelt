@@ -140,10 +140,13 @@ main img {
 /* Footer SECTION */
 
 footer {
-    padding: 36px 8vw 36px 8vw;
+    /* padding: 36px 8vw 36px 8vw; */
+    height: 118px;
+    padding: 0 80px;
     background-color: var(--footer-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -345,10 +348,18 @@ textarea {
     height: 32px;
     width: auto;
     border-radius: 8px;
+    border: none;
     font-weight: 300;
+    padding-left: 8px;
 }
 
 .contact-form button {
+    width: 150px;
+    height: 40px;
+    background-color: #008000;
+    border: none;
+    color: white;
+    font-size: 14px;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -367,8 +378,9 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
+
 
 
 @media(max-width:1000px) {}
