@@ -65,7 +65,7 @@ sprecht euch gut im Team am Anfang ab: wer übernimmt z.B. welchen Teil der Webs
 <h3>Landingpage:</h3> 
 <br>
 Header und Footer sollten auf allen Unterseiten angezeigt werden, alles sollte gleichmäßig eingerückt sein.
-<br>
+<br><br>
 	<ul>
  	<li>Das Design ist dem Mockup nachgearbeitet</li>
 	<li>Die Seite sieht im Desktop und in der mobilen Ansicht immer gut aus</li>
