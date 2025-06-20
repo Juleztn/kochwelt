@@ -19,7 +19,7 @@ die über den geforderten Projektumfang hinausgehen, um spezifisches Feedback da
 <br>
 <h3>Funktionalität</h3>
 <br>
-	<ul style="list-style: none;">
+	<ul style="list-style-type:none;">
 	<li><input type="checkbox">Alle Links und Buttons sind funktionstüchtig.</li>
 	<li>Es sind echte Rezepte auf der Seite, kein Lorem Ipsum.</li>
 	<li>Ein Klick auf das Logo Links oben führt zur Startseite.</li>
