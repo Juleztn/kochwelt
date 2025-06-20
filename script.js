@@ -14,3 +14,8 @@ function sendMail(event) {
         console.log(error);
     });
 }
+
+function calculatePortions(){
+    // let portion = document.getElementById('portion-value').value;
+
+}
