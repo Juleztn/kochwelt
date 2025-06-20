@@ -19,13 +19,13 @@ die über den geforderten Projektumfang hinausgehen, um spezifisches Feedback da
 <br>
 <h3>Funktionalität</h3>
 <br>
-	Alle Links und Buttons sind funktionstüchtig.
-	Es sind echte Rezepte auf der Seite, kein Lorem Ipsum.
-	Ein Klick auf das Logo Links oben führt zur Startseite.
-	Input Feld bei den Rezepten hat einen Standardwert z.B. 4
-	Was passiert bei leeren Inputs?
-	Nutzt ein Burger Menü in der Responsive Ansicht für die Links im Header.
-	Die Hauptseite muss index.html heißen, damit sie standardmäßig geladen wird.
+	- Alle Links und Buttons sind funktionstüchtig.
+	- Es sind echte Rezepte auf der Seite, kein Lorem Ipsum.
+	- Ein Klick auf das Logo Links oben führt zur Startseite.
+	- Input Feld bei den Rezepten hat einen Standardwert z.B. 4
+	- Was passiert bei leeren Inputs?
+	- Nutzt ein Burger Menü in der Responsive Ansicht für die Links im Header.
+	- Die Hauptseite muss index.html heißen, damit sie standardmäßig geladen wird.
 <br>
 <h3>Design</h3>
 <br>
