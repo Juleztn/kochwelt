@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+
+    <section class="meal">
+        <h1>Spaghetti Bolognese</h1>
+        <img class="meal-img" src="./img/spaghetti-bolognese.jpg" alt="Bild mit einem Teller Spaghetti Bolognese">
+        <div class="info">
+            <div class="meal-info">
+                <img src="./img/icons/clock-regular.svg" alt="Bild einer Uhr">
+                <span>20min</span>
+            </div>
+            <div class="meal-info">
+                <img src="./img/icons/brain-solid.svg" alt="Bild eines Gehirns">
+                <span>simple</span>
+            </div>
+            <div class="meal-info">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="Bild eines Kalenders">
+                <span>18.06.2025</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients">
+        <hr>
+        <div class="portions">
+            <span>Zutaten für</span>
+            <input onchange="changePortions()" class="select-portion" type="number" value="4">
+            <button>Portionen</button>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <!-- <td>1</td> -->
+                    <td><span class="amount">1 </span>Zwiebel</td>
+                </tr>
+                <tr>
+                    <!-- <td>1</td> -->
+                    <td><span class="amount">1 </span>Knoblauch</td>
+                </tr>
+                <tr>
+                    <!-- <td>500g</td> -->
+                    <td><span class="amount">500</span>g Rinderhackfleisch</td>
+                </tr>
+                <tr>
+                    <!-- <td>200ml</td> -->
+                    <td><span class="amount">200</span>ml Rinderbrühe</td>
+                </tr>
+                <tr>
+                    <!-- <td>2 EL</td> -->
+                    <td><span class="amount">2</span> EL Tomatenmark</td>
+                </tr>
+                <tr>
+                    <!-- <td>400g</td> -->
+                    <td><span class="amount">400</span>g passierte Tomaten</td>
+                </tr>
+                <tr>
+                    <!-- <td>500g</td> -->
+                    <td><span class="amount">500</span>g Spaghetti</td>
+                </tr>
+                <tr>
+                    <!-- <td>1 TL</td> -->
+                    <td><span class="amount">1</span> TL Oregano</td>
+                </tr>
+                <tr>
+                    <td>Salz & Pfeffer</td>
+                </tr>
+                <tr>
+                    <td>Olivenöl</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="preperation">
+        <h2>Zubereitung</h2>
+        <div class="info">
+            <div class="meal-info">
+                <img src="./img/icons/clock-regular.svg" alt="Bild einer Uhr">
+                <span>ca. 20 Minuten</span>
+            </div>
+            <div class="meal-info">
+                <img src="./img/icons/clock-regular.svg" alt="Bild einer Uhr">
+                <span>Gesamtzeit ca. 20 Minuten</span>
+            </div>
+        </div>
+        <p>Zwiebel und Knoblauch schälen und in kleine Würfel schneiden. Etwas Olivenöl in die Pfanne geben und das
+            Hackfleisch hinzugeben, langsam erhitzen und unter Rühren anbraten. Das Hackfleisch mit Salz und Pfeffer
+            würzen. Zwiebeln und Knoblauch dazugeben und kurz mitbraten. Mit der Rinderbrühe ablöschen. Dann
+            Tomatenmark, Oregano und die passierten Tomaten unterrühren. Etwa 30 Minuten einkochen lassen. Spaghetti in
+            Salzwasser bissfest kochen. Durch ein Sieb abgießen und zusammen mit der Sauce servieren.</p>
+    </section>
+
+    <section class="created-by">
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+            <img src="./img/profile.png" alt="Avatar">
+            <span>Jule</span>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <img class="logo" src="./img/logo.png" alt="Logo">
+        </div>
+        <div class="socials">
+            <img src="./img/facebook.png" alt="Find us on Facebook">
+            <img src="./img/instagram.png" alt="Follow us on Instagram">
+            <img src="./img/twitter.png" alt="Follow us on Twitter">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

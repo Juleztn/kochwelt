@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <form class="contact" onsubmit="sendMail(event)">
+        <div class="contact-form">
+            <h2>Kontaktiere uns</h2>
+            <label class="your-information">
+                <span>Dein Name:</span>
+                <input type="text" required>
+            </label>
+            <label class="your-information">
+                <span>Deine E-Mail:</span>
+                <input type="email" name="email" required>
+            </label>
+            <label class="your-information">
+                <span>Deine Nachricht:</span>
+                <textarea name="message"></textarea>
+                </label>
+            <div class="send">
+                <button type="submit">Abschicken</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
