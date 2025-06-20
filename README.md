@@ -29,9 +29,9 @@ die über den geforderten Projektumfang hinausgehen, um spezifisches Feedback da
 <br>
 <h3>Design</h3>
 <br>
-	<input type="checkbox" checked="false">Bitte setze das Design 1:1 um. Wenn es für die entsprechende Seite kein Design gibt, 
+	<input type="checkbox">Bitte setze das Design 1:1 um. Wenn es für die entsprechende Seite kein Design gibt, 
   kannst du kreativ werden (nutze ggf. Google hierfür), orientiere dich aber bitte an den gegebenen Designs.<br>
-	<input type="checkbox" checked="false">Header und Footer sind überall gleich und funktionieren.<br>
+	<input type="checkbox">Header und Footer sind überall gleich und funktionieren.<br>
 	Richtige Schriftart ausgewählt & lokal eingebunden
 	Transitions: 75ms - 125ms wenn anklickbar
 	Favicon vorhanden
