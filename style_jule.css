@@ -35,6 +35,8 @@ table {
   padding-top: 24px;
 }
 
+/* Absprache, bzgl. Höhe der Zutaten-Zeilen */
+
 td {
   border-radius: 16px;
   height: 64px;
