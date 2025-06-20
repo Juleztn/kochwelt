@@ -19,14 +19,14 @@ die über den geforderten Projektumfang hinausgehen, um spezifisches Feedback da
 <br>
 <h3>Funktionalität</h3>
 <br>
-	<ul style="list-style-type:none;">
-	<li><input type="checkbox">Alle Links und Buttons sind funktionstüchtig.</li>
+	<ul>
+	<li>Alle Links und Buttons sind funktionstüchtig.</li>
 	<li>Es sind echte Rezepte auf der Seite, kein Lorem Ipsum.</li>
 	<li>Ein Klick auf das Logo Links oben führt zur Startseite.</li>
-	Input Feld bei den Rezepten hat einen Standardwert z.B. 4
-	Was passiert bei leeren Inputs?
-	Nutzt ein Burger Menü in der Responsive Ansicht für die Links im Header.
-	Die Hauptseite muss index.html heißen, damit sie standardmäßig geladen wird.
+	<li>Input Feld bei den Rezepten hat einen Standardwert z.B. 4</li>
+	<li>Was passiert bei leeren Inputs?</li>
+	<li>Nutzt ein Burger Menü in der Responsive Ansicht für die Links im Header.</li>
+	<li>Die Hauptseite muss index.html heißen, damit sie standardmäßig geladen wird.</li>
 	</ul>
 <br>
 <h3>Design</h3>
