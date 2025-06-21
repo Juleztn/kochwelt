@@ -46,41 +46,42 @@
         <hr>
         <div class="portions">
             <span>Zutaten für</span>
-            <input onchange="changePortions()" class="select-portion" type="number" value="4">
-            <button type="submit">Portionen</button>
+            <input id="value" class="select-portion" type="number" value="4" min="1" max="15">
+            <button onclick="calculatePortions()" type="submit">Portionen</button>
         </div>
+        <span id="false"></span>
         <div>
             <table class="ingredient-table">
                 <tr>
-                    <td class="td-amount"><span class="amount">1 </span></td>
+                    <td class="td-amount"><span class="amount" data-original="0.25">1 </span></td>
                     <td class="table-data">Zwiebel</td>
                 </tr>
                 <tr>
-                    <td class="td-amount"><span class="amount">1 </span></td>
+                    <td class="td-amount"><span class="amount" data-original="0.25">1 </span></td>
                     <td class="table-data">Knoblauch</td>
                 </tr>
                 <tr>
-                    <td class="td-amount"><span class="amount">500</span>g</td>
+                    <td class="td-amount"><span class="amount" data-original="125">500</span>g</td>
                     <td class="table-data">Rinderhackfleisch</td>
                 </tr>
                 <tr>
-                    <td class="td-amount"><span class="amount">200</span>ml</td>
+                    <td class="td-amount"><span class="amount" data-original="50">200</span>ml</td>
                     <td class="table-data">Rinderbrühe</td>
                 </tr>
                 <tr>
-                    <td class="td-amount"><span class="amount">2</span> EL</td>
+                    <td class="td-amount"><span class="amount" data-original="0.5">2</span> EL</td>
                     <td class="table-data">Tomatenmark</td>
                 </tr>
                 <tr>
-                    <td class="td-amount"><span class="amount">400</span>g</td>
+                    <td class="td-amount"><span class="amount" data-original="100">400</span>g</td>
                     <td class="table-data">passierte Tomaten</td>
                 </tr>
                 <tr>
-                    <td class="td-amount"><span class="amount">500</span>g</td>
+                    <td class="td-amount"><span class="amount" data-original="125">500</span>g</td>
                     <td class="table-data">Spaghetti</td>
                 </tr>
                 <tr>
-                    <td class="td-amount"><span class="amount">1</span> TL</td>
+                    <td class="td-amount"><span class="amount" data-original="0.25">1</span> TL</td>
                     <td class="table-data">Oregano</td>
                 </tr>
                 <tr>

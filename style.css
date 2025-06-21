@@ -248,6 +248,10 @@ hr {
     background-color: #026e02;
 }
 
+#false {
+    color: darkred;
+}
+
 .ingredient-table {
     font-size: 24px;
     width: 100%;
