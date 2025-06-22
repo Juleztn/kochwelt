@@ -9,11 +9,12 @@ function calculatePortions() {
         error.innerHTML = "Bitte andere Portionsgröße angeben"
     } else
 
-    for (let i = 0; i < spanAmount.length; i++) {
-        let original = spanAmount[i].getAttribute('data-original');
-        spanAmount[i].innerHTML = original * inputValue.value;
-        error.innerHTML = "";
-    }
+        for (let i = 0; i < spanAmount.length; i++) {
+            let original = spanAmount[i].getAttribute('data-original');
+            spanAmount[i].innerHTML = original * inputValue.value;
+            error.innerHTML = "";
+        }
+
 }
 
 
