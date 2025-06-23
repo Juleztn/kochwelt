@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style_global.css">
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="rezept.css">
-
     <link rel="icon" href="./img/logo_small.png" type="image/png">
     <title>Kochwelt</title>
 
@@ -25,7 +23,7 @@
 
     <nav>
         <div>
-            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Kochwelt Logo"></a>
+            <a href="index.html"><img src="./img/logo.png" alt="Kochwelt Logo"></a>
         </div>
         <div class="navbar">
             <a class="nav-link" href="index.html">Start</a>
@@ -38,20 +36,20 @@
 
     <!-- REZEPT HEADER SECTION -->
 
-    <header>
+    <header class="meal">
         <h1>Rezept Croissant</h1>
-        <img class="rezept-main-picture" src="./img/croissant.jpg" alt="Pasta">
+        <img class="meal-img" src="./img/croissant.jpg" alt="Pasta">
 
-        <div class="rezept-main-info-section">
-            <div class="rezept-info-section">
+        <div class="info">
+            <div class="meal-info">
                 <img src="./img/icons/clock-regular.svg" alt="">
                 <td>90 min</td>
             </div>
-            <div class="rezept-info-section">
+            <div class="meal-info">
                 <img src="./img/icons/brain-solid.svg" alt="">
                 <td>anspruchsvoll</td>
             </div>
-            <div class="rezept-info-section">
+            <div class="meal-info">
                 <img src="./img/icons/calendar-alt-regular.svg" alt="">
                 <td>20.06.2025</td>
             </div>
@@ -59,125 +57,122 @@
         </div>
     </header>
 
-    <main class="main-rezept-html">
-        <div class="rezept-info-section-line"></div>
-        <div class="rezept-ingredience-header">
-            <span>Zutaten für </span>
-            <form>
-                <input type="number" min="1" max="40" id="ingredience-multiplier" value="4">
-                <input type="submit" value="Portionen" onclick="">
-            </form>
-        </div>
-    </main>
-
     <!-- REZEPT INGREDIENCE SECTION -->
 
-    <section class="rezept-ingredience-section">
-        <table cellspacing="0" cellpadding="0" class="width-100">
+    <section class="ingredients">
+        <hr>
+        <div class="portions">
+            <span>Zutaten für </span>
+            <input type="number" min="1" max="15" value="4">
+            <button onclick="calculatePortions()" type="submit">Portionen</button>
+        </div>
+        <table>
             <tr>
-                <td>300g</td>
-                <td>Mehl (Typ 405 oder 550)</td>
+                <td class="tbl-left">300g</td>
+                <td class="tbl-right">Mehl (Typ 405 oder 550)</td>
             </tr>
-            <tr class="bg-gray">
+            <tr>
                 <td class="tbl-left">150ml</td>
-                <td class="fill-width tbl-right">Milch</td>
+                <td class="tbl-right">Milch</td>
             </tr>
             <tr>
-                <td>25g</td>
-                <td>Margarine</td>
+                <td class="tbl-left">25g</td>
+                <td class="tbl-right">Margarine</td>
             </tr>
-            <tr class="bg-gray">
+            <tr>
                 <td class="tbl-left">10g</td>
-                <td class="fill-width tbl-right">Zucker</td>
+                <td class="tbl-right">Zucker</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td class="tbl-left">1</td>
                 <td>Ei(er)</td>
             </tr>
-            <tr class="bg-gray">
+            <tr>
                 <td class="tbl-left">1</td>
-                <td class="fill-width tbl-right">Eigelb</td>
+                <td class="tbl-right">Eigelb</td>
             </tr>
             <tr>
-                <td>20g</td>
-                <td>Hefe</td>
+                <td class="tbl-left">20g</td>
+                <td class="tbl-right">Hefe</td>
             </tr>
-            <tr class="bg-gray">
+            <tr>
                 <td class="tbl-left">4g</td>
-                <td class="fill-width tbl-right">Salz</td>
+                <td class="tbl-right">Salz</td>
             </tr>
             <tr>
-                <td>1 TL</td>
-                <td>Zitrone(n) - Schale, gerieben</td>
+                <td class="tbl-left">1 TL</td>
+                <td class="tbl-right">Zitrone(n) - Schale, gerieben</td>
             </tr>
-            <tr class="bg-gray">
+            <tr>
                 <td class="tbl-left">1 Msp.</td>
-                <td>Vanille</td>
+                <td class="tbl-right">Vanille</td>
             </tr>
             <tr>
-                <td></td>
-                <td>Mehl für die Arbeitsfläche</td>
-            </tr>
-            <tr class="bg-gray">
                 <td class="tbl-left"></td>
-                <td>Wasser</td>
+                <td class="tbl-right">Mehl für die Arbeitsfläche</td>
+            </tr>
+            <tr>
+                <td class="tbl-left"></td>
+                <td class="tbl-right">Wasser</td>
             </tr>
         </table>
     </section>
 
     <!-- REZEPT ZUBEREITUNG SECTION -->
 
-    <section class="rezept-zubereitung-section">
+    <section class="preperation">
         <h2>Zubereitung</h2>
-        <div class="rezept-main-info-section">
-            <div class="rezept-info-section rezept-zubereitung-info">
+        <div class="info">
+            <div class="meal-info">
                 <img src="./img/icons/clock-regular.svg" alt="">
                 <td>90 Min.</td>
             </div>
 
-            <div class="rezept-info-section rezept-zubereitung-info">
+            <div class="meal-info">
                 <img src="./img/icons/clock-regular.svg" alt="">
                 <td>Gesamtzeit ca. 13 Std. 30 Min.</td>
             </div>
         </div>
-        <span class="rezept-zubereitung-text">
-            Milch erwärmen, Zucker und Hefe unter Rühren darin auflösen. 
-            Hefemilch, Mehl, Salz, Eigelb, Ei, Zitronenschale, Vanille und Margarine 
-            zu einem geschmeidigen Teig verarbeiten. 
+        <p>
+            Milch erwärmen, Zucker und Hefe unter Rühren darin auflösen.
+            Hefemilch, Mehl, Salz, Eigelb, Ei, Zitronenschale, Vanille und Margarine
+            zu einem geschmeidigen Teig verarbeiten.
             Dann abgedeckt über Nacht im Kühlschrank gehen lassen.
             <br><br>
             Die Butter zwischen Klarsichtfolie ca. 30 x 15 cm ausrollen und kühlstellen.
             <br><br>
-            Den Hefeteig auf der bemehlten Arbeitsfläche kreuzförmig einschneiden. 
-            So ausrollen, dass ein Kreuz entsteht. Die Butterplatte in die Mitte legen. 
-            Die Teigkanten mit etwas Wasser bestreichen. Die Teiglappen über die Butterplatte legen, 
-            sodass diese vollständig eingehüllt ist. 
+            Den Hefeteig auf der bemehlten Arbeitsfläche kreuzförmig einschneiden.
+            So ausrollen, dass ein Kreuz entsteht. Die Butterplatte in die Mitte legen.
+            Die Teigkanten mit etwas Wasser bestreichen. Die Teiglappen über die Butterplatte legen,
+            sodass diese vollständig eingehüllt ist.
             Den Teig rundherum leicht andrücken und 15 Minuten kalt stellen.
             <br><br>
-            Den Teigblock auf der bemehlten Arbeitsfläche auf etwa 50 x 30 cm ausrollen. 
-            Ein Teigdrittel zur Mitte hin einschlagen, das andere Drittel darüberlegen. 20 Minuten kalt stellen. 
+            Den Teigblock auf der bemehlten Arbeitsfläche auf etwa 50 x 30 cm ausrollen.
+            Ein Teigdrittel zur Mitte hin einschlagen, das andere Drittel darüberlegen. 20 Minuten kalt stellen.
             <br><br>
-            Ausrollen, Einschlagen und Kaltstellen einmal wiederholen (einfache Tour). 
-            Nun dem Teig noch eine doppelte Tour geben, d.h. die rechte und die linke Teigkante 
-            bis zur Mitte hin einschlagen, sodass sie in der Mitte aneinander stoßen. 
+            Ausrollen, Einschlagen und Kaltstellen einmal wiederholen (einfache Tour).
+            Nun dem Teig noch eine doppelte Tour geben, d.h. die rechte und die linke Teigkante
+            bis zur Mitte hin einschlagen, sodass sie in der Mitte aneinander stoßen.
             Nach dieser Tour sollte der Teig mindestens 30 Minuten im Kühlschrank entspannen.
             <br><br>
-            Den Teig auf der bemehlten Arbeitsfläche auf ca. 60 x 20 cm ausrollen. 
-            Aus der Platte 8 gleichgroße Dreiecke schneiden. An der Schmalseite in der Mitte 
+            Den Teig auf der bemehlten Arbeitsfläche auf ca. 60 x 20 cm ausrollen.
+            Aus der Platte 8 gleichgroße Dreiecke schneiden. An der Schmalseite in der Mitte
             jeweils 2 cm tief einschneiden, um die Hörnchen besser biegen zu können.
             <br><br>
-            Die Dreiecke von der Schmalseite her zu Hörnchen aufrollen, dabei die Teigspitzen leicht andrücken. 
-            Auf ein mit Backpapier belegtes Backblech setzen. 
+            Die Dreiecke von der Schmalseite her zu Hörnchen aufrollen, dabei die Teigspitzen leicht andrücken.
+            Auf ein mit Backpapier belegtes Backblech setzen.
             Ca. 30 Minuten gehen lassen, nach 20 Minuten die Croissants mit dem verquirlten Eigelb bestreichen.
             <br><br>
-            Im vorgeheizten Backofen auf der 2. Einschubleiste von unten bei 210 Grad 15-18 Minuten backen 
+            Im vorgeheizten Backofen auf der 2. Einschubleiste von unten bei 210 Grad 15-18 Minuten backen
             (Gas 3-4, Umluft ca. 15 Minuten bei 190 Grad). Aus dem Ofen nehmen und leicht abkühlen lassen.
-        </span>
+        </p>
+    </section>
+
+    <section class="created-by">
         <h3>Rezept erstellt von</h3>
-        <div class="rezept-user">
+        <div class="profile">
             <img src="./img/profile.png" alt="Profile"> Andreas
         </div>
-
     </section>
 
     <!-- REZEPT FOOTER SECTION -->
