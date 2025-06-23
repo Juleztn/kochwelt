@@ -3,7 +3,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     padding: 0 5vw;
     height: 64px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
@@ -12,6 +12,7 @@ nav {
 nav .navbar {
     display: flex;
     gap: 32px;
+    align-items: end;
 }
 
 nav .nav-link {
@@ -22,8 +23,9 @@ nav .nav-link {
 
 nav .nav-link:hover {
     color: var(--link-hover-color);
-    border-bottom: 4px solid var(--link-hover-color);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    text-decoration: underline 4px;
+    text-underline-offset: 5px;
 }
 
 nav img {
