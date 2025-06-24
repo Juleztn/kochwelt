@@ -15,17 +15,16 @@
 <body>
     <nav>
         <div class="nav-logo">
-            <a href="index.html"><img src="./img/logo.png" alt="Kochwelt Logo"></a>
+            <a href="#"><img src="./img/logo.png" alt="Kochwelt Logo"></a>
         </div>
         <div class="navbar">
-            <a class="nav-link" href="./index.html">Start</a>
+            <a class="nav-link" href="#">Start</a>
             <a class="nav-link" href="./rezept_spaghetti.html">Rezept des Tages</a>
             <a class="nav-link" href="./contact.html">Kontakt</a>
             <a class="nav-link" href="#">Impressum</a>
-            <a href="#" class="d_none"></a>
+            <a href="#"><img class="nav-burger-menu" src="./img/icons/menu-black.svg" alt="Menu"></a>
         </div>
     </nav>
-
     <section class="meal">
         <h1>Spaghetti Bolognese</h1>
         <img class="meal-img" src="./img/spaghetti-bolognese.jpg" alt="Bild mit einem Teller Spaghetti Bolognese">
@@ -49,7 +48,7 @@
         <hr>
         <div class="portions">
             <span>Zutaten für</span>
-            <input id="value" class="select-portion" type="number" value="4" min="1" max="15">
+            <input id="value" type="number" value="4" min="1" max="15">
             <button onclick="calculatePortions()" type="submit">Portionen</button>
         </div>
         <span id="false"></span>
@@ -128,7 +127,7 @@
 
     <footer>
         <div>
-            <a href="./index.html"><img class="logo" src="./img/logo.png" alt="Logo"></a>
+            <a href=""><img class="logo" src="./img/logo.png" alt="Logo"><img class="logo-small" src="./img/logo_small.png" alt="Logo klein"></a>
         </div>
         <div class="socials">
             <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png"
@@ -136,6 +135,13 @@
             <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
                     alt="Follow us on Instagram"></a>
             <a href="https://x.com/" target="_blank"><img src="./img/twitter.png" alt="Follow us on Twitter"></a>
+        </div>
+        <div class="socials-small">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_small.png"
+                    alt="Find us on Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram_small.PNG"
+                    alt="Follow us on Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="./img/twitter_small.PNG" alt="Follow us on Twitter"></a>
         </div>
     </footer>
 
