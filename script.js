@@ -2,16 +2,17 @@
 
 function calculatePortions() {
     let inputValue = document.getElementById('value');
+    inputValue = parseFloat(inputValue.value)
     let spanAmount = document.getElementsByClassName('amount');
     let error = document.getElementById('false');
 
-    if (inputValue.value > 15) {
-        error.innerHTML = "Bitte andere Portionsgröße angeben"
+    if (inputValue > 15 || inputValue < 1) {
+        error.innerHTML = "Bitte Portionsgröße zwischen 1 und 15 angeben"
     } else
 
         for (let i = 0; i < spanAmount.length; i++) {
             let original = spanAmount[i].getAttribute('data-original');
-            spanAmount[i].innerHTML = original * inputValue.value;
+            spanAmount[i].innerHTML = original * inputValue;
             error.innerHTML = "";
         }
 
