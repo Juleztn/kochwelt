@@ -2,7 +2,7 @@
 
 function calculatePortions() {
     let inputValue = document.getElementById('value');
-    inputValue = parseFloat(inputValue.value)
+    inputValue = parseFloat(inputValue.value);
     let spanAmount = document.getElementsByClassName('amount');
     let error = document.getElementById('false');
 
