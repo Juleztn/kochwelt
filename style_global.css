@@ -31,6 +31,7 @@ html {
     text-align: center;
     border-radius: 5px;
     transition: transform 75ms ease;
+    cursor: pointer;
     /* Fügt eine Übergangszeit hinzu */
 }
 
@@ -39,6 +40,7 @@ html {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 3px 10px var(--txt-color);
     transform: scale(1.04);
+    cursor: pointer;
     /* Vergrößert das Bild um 4% */
 }
 
