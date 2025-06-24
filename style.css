@@ -381,8 +381,8 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    /* flex: 1; */
+    /* height: 80vh; */
+    flex: 1;
 }
 
 
