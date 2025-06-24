@@ -65,7 +65,7 @@ header {
     justify-content: space-evenly;
 }
 
-.vertical h1 {
+.vertical h2 {
     padding-bottom: 24px;
 }
 
@@ -91,7 +91,7 @@ header {
     padding: 0 8vw;
 }
 
-main h1 {
+main h2 {
     padding: 36px;
     text-align: center;
 }
@@ -123,7 +123,7 @@ main img {
     padding: 0 8vw 80px 8vw;
 }
 
-.lower-section h1 {
+.lower-section h2 {
     padding: 36px;
     text-align: center;
 }
@@ -458,7 +458,18 @@ textarea {
 @media(max-width: 800px) {
 
     /* INDEX NAV SECTION */
+    nav {
+        align-items: center;
+    }
 
+    .nav-burger-menu {
+        display: block;
+        height: 32px;
+    }
+
+    nav .nav-link {
+        display: none;
+    }
 
     /* INDEX FOOTER SECTION */
 
@@ -478,4 +489,36 @@ textarea {
         height: 32px;
         border-radius: 5px;
     }
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 40px 4vw;
+    }
+
+    .vertical {
+        width: 350px;
+        /* height: 350px; */
+    }
+
+    .horizontal img {
+        width: 350px;
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .main-section-flex img {
+        width: 350px;
+        height: 320px;
+    }
+
+    .lower-section-topic {
+        width: 350px;
+    }
+
+    .lower-section-topic img {
+        width: 350px;
+        height: 320px;
+    }
+
 }
