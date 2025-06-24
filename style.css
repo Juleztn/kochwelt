@@ -470,6 +470,10 @@ textarea {
         align-items: center;
     }
 
+    .nav-logo {
+        margin-bottom: 0px;
+    }
+
     .nav-burger-menu {
         display: block;
         height: 32px;
