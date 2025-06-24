@@ -62,60 +62,67 @@
     <section class="ingredients">
         <hr>
         <div class="portions">
-            <span>Zutaten für </span>
-            <input type="number" min="1" max="15" value="4">
+            <span>Zutaten für</span>
+            <input id="value" class="select-portion" type="number" value="4" min="1" max="15">
             <button onclick="calculatePortions()" type="submit">Portionen</button>
         </div>
-        <table>
-            <tr>
-                <td class="tbl-left">300g</td>
-                <td class="tbl-right">Mehl (Typ 405 oder 550)</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">150ml</td>
-                <td class="tbl-right">Milch</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">25g</td>
-                <td class="tbl-right">Margarine</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">10g</td>
-                <td class="tbl-right">Zucker</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">1</td>
-                <td>Ei(er)</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">1</td>
-                <td class="tbl-right">Eigelb</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">20g</td>
-                <td class="tbl-right">Hefe</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">4g</td>
-                <td class="tbl-right">Salz</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">1 TL</td>
-                <td class="tbl-right">Zitrone(n) - Schale, gerieben</td>
-            </tr>
-            <tr>
-                <td class="tbl-left">1 Msp.</td>
-                <td class="tbl-right">Vanille</td>
-            </tr>
-            <tr>
-                <td class="tbl-left"></td>
-                <td class="tbl-right">Mehl für die Arbeitsfläche</td>
-            </tr>
-            <tr>
-                <td class="tbl-left"></td>
-                <td class="tbl-right">Wasser</td>
-            </tr>
-        </table>
+        <span id="false"></span>
+        <div>
+            <table>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="330">1320</span>g</td>
+                    <td class="tbl-right">Mehl (Typ 405 oder 550)</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="150">600</span>ml</td>
+                    <td class="tbl-right">Milch</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="25">100</span>g</td>
+                    <td class="tbl-right">Margarine</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="10">40</span>g</td>
+                    <td class="tbl-right">Zucker</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="1">4</span></td>
+                    <td>Ei(er)</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="1">4</span></td>
+                    <td class="tbl-right">Eigelb</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="20">80</span>g</td>
+                    <td class="tbl-right">Hefe</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="4">16</span>g</td>
+                    <td class="tbl-right">Salz</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="1">4</span> TL</td>
+                    <td class="tbl-right">Zitrone(n) - Schale, gerieben</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="1">4</span> Msp.</td>
+                    <td class="tbl-right">Vanille</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="150">600</span>g</td>
+                    <td class="tbl-right">Butter</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"></td>
+                    <td class="tbl-right">Mehl für die Arbeitsfläche</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"></td>
+                    <td class="tbl-right">Wasser</td>
+                </tr>
+            </table>
+        </div>
     </section>
 
     <!-- REZEPT ZUBEREITUNG SECTION -->
@@ -179,12 +186,14 @@
 
     <footer>
         <div>
-            <a href="index.html"><img class="logo" src="./img/logo.png" alt=""></a>
+            <a href="./index.html"><img class="logo" src="./img/logo.png" alt="Logo"></a>
         </div>
         <div class="socials">
-            <a href="https://facebook.com" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
-            <a href="https://instagram.com" target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
-            <a href="https://x.com" target="_blank"><img src="./img/twitter.png" alt="twitter_x"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png"
+                    alt="Find us on Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                    alt="Follow us on Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="./img/twitter.png" alt="Follow us on Twitter"></a>
         </div>
     </footer>
 
