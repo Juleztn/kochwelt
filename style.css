@@ -5,7 +5,7 @@ nav {
     justify-content: space-between;
     align-items: end;
     padding: 0 5vw;
-    height: 64px;
+    height: 88px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -36,6 +36,10 @@ nav img {
 .nav-burger-menu {
     display: none;
     height: 32px;
+}
+
+.nav-logo {
+    margin-bottom: 12px;
 }
 
 /* index.html */
@@ -150,7 +154,7 @@ main img {
 /* Footer SECTION */
 
 footer {
-    height: 118px;
+    height: 88px;
     padding: 0 5vw;
     background-color: var(--footer-color);
     display: flex;
@@ -174,6 +178,10 @@ footer {
     border-radius: 0;
     height: 40px;
     border-radius: 5px;
+}
+
+.socials-small {
+    display: none;
 }
 
 .socials {
@@ -521,4 +529,46 @@ textarea {
         height: 320px;
     }
 
+    .socials {
+        display: none;
+    }
+
+    .socials-small {
+        display: initial;
+        display: flex;
+        gap: 16px;
+    }
+
+    .socials-small img {
+        height: 40px;
+        border-radius: 5px;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .vertical {
+        width: 250px;
+        height: 300px;
+    }
+
+    .horizontal img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .main-section-flex img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .lower-section-topic {
+        width: 250px;
+    }
+
+    .lower-section-topic img {
+        width: 250px;
+        height: 250px;
+    }
 }
