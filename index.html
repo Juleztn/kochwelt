@@ -15,7 +15,7 @@
 
 <body>
 
-<!-- INDEX NAVIGATION SECTION -->
+    <!-- INDEX NAVIGATION SECTION -->
 
     <nav>
         <div class="nav-logo">
@@ -26,16 +26,25 @@
             <a class="nav-link" href="./rezept_spaghetti.html">Rezept des Tages</a>
             <a class="nav-link" href="./contact.html">Kontakt</a>
             <a class="nav-link" href="./impressum.html">Impressum</a>
-            <a href="#"><img class="nav-burger-menu" src="./img/icons/menu-black.svg" alt="Menu"></a>
+            <a onclick="toggleNavbar()" href="#"><img id="img" class="nav-burger-menu" src="./img/icons/menu-black.svg"
+                    alt="Menu"></a>
+        </div>
+        <div id="myLinks" class="navbar-vertical">
+            <a class="nav-vertical" href="./index.html">Start</a>
+            <a class="nav-vertical" href="./rezept_spaghetti.html">Rezept des Tages</a>
+            <a class="nav-vertical" href="./contact.html">Kontakt</a>
+            <a class="nav-vertical" href="./impressum.html">Impressum</a>
         </div>
     </nav>
+    <div id="overlay" onclick="navbarMobileToggle()" class="navbar-mobile-closed"></div>
 
-<!-- INDEX HEADER SECTION -->
+    <!-- INDEX HEADER SECTION -->
 
     <header>
         <div class="horizontal">
             <div>
-                <a href="./rezept_croissants.html"><img class="scale" src="./img/croissant.jpg" alt="Croissant Picture"></a>
+                <a href="./rezept_croissants.html"><img class="scale" src="./img/croissant.jpg"
+                        alt="Croissant Picture"></a>
             </div>
             <div class="vertical">
                 <h1>Französische Croissants</h1>
@@ -47,7 +56,7 @@
         </div>
     </header>
 
-<!-- INDEX MAIN SECTION -->    
+    <!-- INDEX MAIN SECTION -->
 
     <main class="main-index-html">
         <h2>Lust auf was Neues?</h2>
@@ -73,7 +82,7 @@
         </div>
     </main>
 
-<!-- INDEX LOWER SECTION -->
+    <!-- INDEX LOWER SECTION -->
 
     <section class="lower-section" role="article">
         <h2>Pfanne vs. Wok - Was ist besser?</h2>
@@ -94,11 +103,12 @@
         </div>
     </section>
 
-<!-- INDEX FOOTER SECTION -->
+    <!-- INDEX FOOTER SECTION -->
 
     <footer>
         <div>
-            <a href=""><img class="logo" src="./img/logo.png" alt="Logo"><img class="logo-small" src="./img/logo_small.png" alt="Logo klein"></a>
+            <a href=""><img class="logo" src="./img/logo.png" alt="Logo"><img class="logo-small"
+                    src="./img/logo_small.png" alt="Logo klein"></a>
         </div>
         <div class="socials">
             <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png"
@@ -115,6 +125,8 @@
             <a href="https://x.com/" target="_blank"><img src="./img/twitter_small.PNG" alt="Follow us on Twitter"></a>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 
 </body>
 

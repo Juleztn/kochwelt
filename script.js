@@ -19,6 +19,42 @@ function calculatePortions() {
 }
 
 
+let links = document.getElementById("myLinks");
+let overlay = document.getElementById("overlay");
+// z = Bildschirmbreite über 800px
+let screen = window.matchMedia("(min-width: 800px)");
+
+// onclick burger-menu, wenn display: flex dann display: none und andersrum
+function toggleNavbar() {
+    if (links.style.display === "flex") {
+        links.style.display = "none";
+        document.getElementById("img").src = "./img/icons/menu-black.svg";
+    } else {
+        links.style.display = "flex";
+        document.getElementById("img").src = "./img/icons/close-black.svg";
+    }
+    document.getElementById('overlay').classList.toggle('d_none');
+}
+// document.getElementById('resp-menu').classList.toggle('navbar-mobile-closed');
+
+
+
+
+// wenn Bildschirmbreite über 800px ist werden die links ausgeblendet
+function myFunction(screen) {
+    if (screen.matches) { // If media query matches
+        links.style.display = "none";
+        document.getElementById("img").src = "./img/icons/menu-black.svg";
+    }
+
+}
+
+// myFunction(screen) wird ausgeführt wenn die Bildschirmbreite über 800px ist
+screen.addEventListener("change", function () {
+    myFunction(screen);
+});
+
+
 
 
 // Kontakt Formular 

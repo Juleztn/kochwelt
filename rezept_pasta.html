@@ -31,9 +31,17 @@
             <a class="nav-link" href="./rezept_spaghetti.html">Rezept des Tages</a>
             <a class="nav-link" href="./contact.html">Kontakt</a>
             <a class="nav-link" href="./impressum.html">Impressum</a>
-            <a href="#"><img class="nav-burger-menu" src="./img/icons/menu-black.svg" alt="Menu"></a>
+            <a onclick="toggleNavbar()" href="#"><img id="img" class="nav-burger-menu" src="./img/icons/menu-black.svg"
+                    alt="Menu"></a>
+        </div>
+        <div id="myLinks" class="navbar-vertical">
+            <a class="nav-vertical" href="./index.html">Start</a>
+            <a class="nav-vertical" href="./rezept_spaghetti.html">Rezept des Tages</a>
+            <a class="nav-vertical" href="./contact.html">Kontakt</a>
+            <a class="nav-vertical" href="./impressum.html">Impressum</a>
         </div>
     </nav>
+    <div id="overlay" onclick="navbarMobileToggle()" class="navbar-mobile-closed"></div>
 
     <!-- REZEPT HEADER SECTION -->
 
@@ -185,7 +193,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
