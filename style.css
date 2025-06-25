@@ -754,4 +754,14 @@ textarea {
     .impressum-main {
         padding: 0 5vw;
     }
+
+    /* Contact-Form */
+    .contact-form {
+        height: 460px;
+        gap: 24px;
+    }
+
+    textarea {
+        height: 120px;
+    }
 }

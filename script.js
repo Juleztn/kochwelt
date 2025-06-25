@@ -1,5 +1,8 @@
-// Portionen berechnen
+let links = document.getElementById("myLinks");
+let overlay = document.getElementById("overlay");
+let screen = window.matchMedia("(min-width: 800px)");
 
+// Portionen berechnen
 function calculatePortions() {
     let inputValue = document.getElementById('value');
     inputValue = parseFloat(inputValue.value);
@@ -18,12 +21,6 @@ function calculatePortions() {
 
 }
 
-
-let links = document.getElementById("myLinks");
-let overlay = document.getElementById("overlay");
-// z = Bildschirmbreite über 800px
-let screen = window.matchMedia("(min-width: 800px)");
-
 // onclick burger-menu, wenn display: flex dann display: none und andersrum
 function toggleNavbar() {
     if (links.style.display === "flex") {
@@ -35,13 +32,9 @@ function toggleNavbar() {
     }
     overlay.classList.toggle('d_none');
 }
-// document.getElementById('resp-menu').classList.toggle('navbar-mobile-closed');
-
-
-
 
 // wenn Bildschirmbreite über 800px ist werden die links ausgeblendet
-function myFunction(screen) {
+function screenWidthAdjust(screen) {
     if (screen.matches) { // If media query matches
         links.style.display = "none";
         document.getElementById("img").src = "./img/icons/menu-black.svg";
@@ -51,14 +44,11 @@ function myFunction(screen) {
 
 // myFunction(screen) wird ausgeführt wenn die Bildschirmbreite über 800px ist
 screen.addEventListener("change", function () {
-    myFunction(screen);
+    screenWidthAdjust(screen);
 });
 
 
-
-
 // Kontakt Formular 
-
 function sendMail(event) {
     event.preventDefault();
     const data = new FormData(event.target);
@@ -73,34 +63,4 @@ function sendMail(event) {
     }).catch((error) => {
         console.log(error);
     });
-}
-
-
-// not used, but successfully created, by Fatih:
-
-function anpassen() {
-    // Wert der eingegebenen Portionen aus dem Eingabefeld holen
-    let portionen = document.getElementById('portionen').value;
-
-    // Zutatenliste holen
-    let zutatenListe = document.getElementById('zutatenListe').getElementsByTagName('td');
-
-    // Überprüfen, ob die eingegebene Anzahl der Portionen zwischen 1 und 20 liegt
-    if (portionen < 1 || portionen > 20) {
-        alert("Bitte geben Sie eine Zahl zwischen 1 und 20 ein.");
-        return; // Funktion beenden, wenn die Anzahl nicht im gültigen Bereich liegt
-    }
-
-    // Schleife durch jede Zutat in der Zutatenliste
-    for (let i = 0; i < zutatenListe.length; i++) {
-        // Ursprüngliche Menge der Zutat holen
-        let menge = zutatenListe[i].getAttribute('data-menge');
-
-        // Wenn eine Menge angegeben ist, neue Menge berechnen und aktualisieren
-        if (menge) {
-            let neueMenge = menge * portionen / 4; // Annahme: Originalrezept ist für 4 Portionen
-            // Text der Zutat aktualisieren mit der neuen Menge
-            zutatenListe[i].innerText = `${neueMenge} ${zutatenListe[i].innerText.split(' ').slice(1).join(' ')}`;
-        }
-    }
 }
