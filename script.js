@@ -33,7 +33,7 @@ function toggleNavbar() {
         links.style.display = "flex";
         document.getElementById("img").src = "./img/icons/close-black.svg";
     }
-    document.getElementById('overlay').classList.toggle('d_none');
+    overlay.classList.toggle('d_none');
 }
 // document.getElementById('resp-menu').classList.toggle('navbar-mobile-closed');
 
