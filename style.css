@@ -408,6 +408,7 @@ textarea {
 .impressum-main {
     padding: 0 8vw;
     color: var(--txt-color);
+    overflow:hidden;
 }
 
 .impressum-allgemein {
