@@ -431,12 +431,15 @@ textarea {
     padding-bottom: 64px;
     color: var(--txt-color);
 }
+
 .datenschutz h2 {
     padding: 36px 0;
 }
+
 .datenschutz h4 {
     padding: 16px 0;
 }
+
 .datenschutz ul {
     padding-left: 24px;
 }
@@ -540,6 +543,12 @@ textarea {
         height: 32px;
         border-radius: 5px;
     }
+
+    /* Impressum */
+    .impressum-main {
+        padding: 0 5vw;
+    }
+
 }
 
 @media(max-width: 600px) {
