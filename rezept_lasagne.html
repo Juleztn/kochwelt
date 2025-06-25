@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="Kochwelt-Fatih.css" />
+    <script src="Kochwelt-Fatih.js"></script>
+    <link rel="icon" href="logo_small.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_global.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#"><img src="./img/logo.png" alt="Kochwelt Logo"></a>
+        </div>
+        <div class="navbar">
+            <a class="nav-link" href="./index.html">Start</a>
+            <a class="nav-link" href="./rezept_spaghetti.html">Rezept des Tages</a>
+            <a class="nav-link" href="./contact.html">Kontakt</a>
+            <a class="nav-link" href="./impressum.html">Impressum</a>
+            <a href="#"><img class="nav-burger-menu" src="./img/icons/menu-black.svg" alt="Menu"></a>
+        </div>
+    </nav>
+
+    <section class="meal">
+        <h1>Lasagne Bolognese</h1>
+        <img class="meal-img" src="./img/lasagne-bolognese.webp" alt="Bild von Lasagne Bolognese">
+        <div class="info">
+            <div class="meal-info">
+                <img src="./img/icons/clock-regular.svg" alt="Bild einer Uhr">
+                <span>1 Stunde 35 Min</span>
+            </div>
+            <div class="meal-info">
+                <img src="./img/icons/brain-solid.svg" alt="Bild eines Gehirns">
+                <span>normal</span>
+            </div>
+            <div class="meal-info">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="Bild eines Kalenders">
+                <span>01.07.2024</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="Rezept-Header d_none">
+      <h1>Lasagne Bolognese</h1>
+      <img src="lasagne-bolognese.webp" class="Rezept-Header-Image" />
+
+      <div class="Rezept-Header-Info">
+        <div class="Rezept-Header-Icon-Container">
+          <img src="clock-regular.svg" class="Rezept-Header-Icon" />
+          <span>1 Stunde 35 Min</span>
+        </div>
+
+        <div class="Rezept-Header-Icon-Container">
+          <img src="brain-solid.svg" class="Rezept-Header-Icon" />
+          <span>normal</span>
+        </div>
+
+        <div class="Rezept-Header-Icon-Container">
+          <img src="calendar-alt-regular.svg" class="Rezept-Header-Icon" />
+          <span>01.07.2024</span>
+        </div>
+      </div> -->
+
+
+    <section class="ingredients">
+        <hr>
+        <div class="portions">
+            <span>Zutaten für</span>
+            <input id="value" type="number" value="4" min="1" max="20">
+            <button onclick="calculatePortions()" type="submit">Portionen</button>
+        </div>
+        <span id="false"></span>
+        <div>
+            <table>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="3">12</span></td>
+                    <td class="tbl-right">Lasagneblätter</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="150">600</span>g</td>
+                    <td class="tbl-right">Hackfleisch</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="200">800</span>ml</td>
+                    <td class="tbl-right">Tomatensauce</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="0.5">2</span> EL</td>
+                    <td class="tbl-right">Tomatenmark</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="50">200</span>g</td>
+                    <td class="tbl-right">Mozarella</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="0.25">1</span></td>
+                    <td class="tbl-right">Zwiebel</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="0.5">2</span> Zehe(n)</td>
+                    <td class="tbl-right">Knoblauch</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="0.75">3</span> EL</td>
+                    <td class="tbl-right">Olivenöl</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="0.25">1</span> TL</td>
+                    <td class="tbl-right">Basilikum</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="20">80</span>g</td>
+                    <td class="tbl-right">Margarine</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="20">80</span>g</td>
+                    <td class="tbl-right">Mehl</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="125">500</span>ml</td>
+                    <td class="tbl-right">Gemüsebrühe</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"><span class="amount" data-original="125">500</span>ml</td>
+                    <td class="tbl-right">Milch</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"></td>
+                    <td class="tbl-right">Salz</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"></td>
+                    <td class="tbl-right">Oregano</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"></td>
+                    <td class="tbl-right">Paprikapulver</td>
+                </tr>
+                <tr>
+                    <td class="tbl-left"></td>
+                    <td class="tbl-right">Muskat</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- 
+      <div class="Rezept-Header-Line"></div>
+    </div>
+
+    <div class="Rezept-Zutaten">
+      <div class="Rezept-Zutaten-Header">
+        <div class="Rezept-Zutaten-Text">
+          <span>Zutaten für</span>
+        </div>
+        <div class="Rezept-Zutaten-Portionen">
+          <input type="number" id="portionen" value="4" min="1" max="20" />
+          <button onclick="anpassen()">Portionen</button>
+        </div>
+      </div>
+
+      <div class="Rezept-Zutaten-Liste">
+        <table>
+          <tbody id="zutatenListe">
+            <tr style="background-color: #efefef">
+              <td data-menge="12">12 Lasagneblätter</td>
+            </tr>
+            <tr>
+              <td data-menge="500">600 g Hackfleisch</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td data-menge="800">800 ml Tomatensauce</td>
+            </tr>
+            <tr>
+              <td data-menge="500">2 EL Tomatenmark</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td data-menge="200">200 g Mozarella</td>
+            </tr>
+            <tr>
+              <td data-menge="1">1 Zwiebel</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td data-menge="2">2 Knoblauchzehe</td>
+            </tr>
+            <tr>
+              <td data-menge="2">3 EL Olivenöl</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td data-menge="">Salz</td>
+            </tr>
+            <tr>
+              <td data-menge="">Oregano</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td data-menge="1">1 TL Basilikum</td>
+            </tr>
+            <tr>
+              <td data-menge="">Paprikapulver</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td data-menge="1">80 g Margarine</td>
+            </tr>
+            <tr>
+              <td data-menge="1">80 g Mehl</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td data-menge="1">500 Milliliter Gemüsebrühe</td>
+            </tr>
+            <tr>
+              <td data-menge="1">500 Milliliter Milch</td>
+            </tr>
+            <tr style="background-color: #efefef">
+              <td>Muskat</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> -->
+
+    <section class="preperation">
+        <h2>Zubereitung</h2>
+        <div class="info">
+            <div class="meal-info">
+                <img src="./img/icons/clock-regular.svg" alt="Bild einer Uhr">
+                <span>1 Stunde 35 Min</span>
+            </div>
+            <div class="meal-info">
+                <img src="./img/icons/clock-regular.svg" alt="Bild einer Uhr">
+                <span>Gesamtzeit ca. 1 Stunde 35 Min</span>
+            </div>
+        </div>
+        <p>
+            <b>Hackfleischsoße:</b><br /><br />
+            600 g Hackfleisch mit 3 EL Olivenöl in einem Topf anbraten. 1 Zwiebel
+            und 2 Knoblauchzehen schälen, fein würfeln und zum Fleisch geben. 2 EL
+            Tomatenmark unterrühren, dann mit 800 ml Tomatensauce ablöschen. Mit
+            Salz, Paprikapulver, Oregano und 1 TL Basilikum würzen und alles ca.
+            10 Minuten köcheln lassen.<br /><br />
+
+            <b>Béchamelsoße:</b><br /><br />
+            80 g Margarine in einem separaten Topf erhitzen, 80 g Mehl dazugeben
+            und kurz anschwitzen. Nach und nach 500 ml Gemüsebrühe unter Rühren
+            einlaufen lassen. Anschließend 500 ml Milch dazugeben und unter Rühren
+            aufkochen. Eine Prise Muskat in die Soße reiben und gut umrühren.<br /><br />
+
+            <b>Lasagne schichten:</b><br /><br />
+            Zuerst etwas Hackfleischsoße in eine feuerfeste Form geben. Dann 3
+            Lasagneblätter darauflegen, wieder Hackfleischsoße, anschließend etwas
+            Béchamelsoße. Diesen Wechsel aus Lasagneblättern, Hackfleisch- und
+            Béchamelsoße wiederholen, bis alle Zutaten aufgebraucht sind. Zum
+            Abschluss die restliche Béchamelsoße verteilen und 200 g geriebenen
+            Mozzarella darüberstreuen.<br /><br />
+
+            <b>Backen:</b><br /><br />
+            Im vorgeheizten Ofen bei 180 °C Umluft 30–40 Minuten backen, bis der
+            Käse goldbraun ist.
+        </p>
+    </section>
+
+    <!-- <div class="Rezept-Zubereitung">
+      <h2>Zubereitung</h2>
+      <div class="Rezept-Zubereitung-Header">
+        <div class="Rezept-Header-Icon-Container">
+          <img src="clock-regular.svg" class="Rezept-Header-Icon" />
+          <span>1 Stunde 35 Min</span>
+        </div>
+
+        <div class="Rezept-Header-Icon-Container">
+          <img src="brain-solid.svg" class="Rezept-Header-Icon" />
+          <span>normal</span>
+        </div>
+
+        <div class="Rezept-Header-Icon-Container">
+          <img src="calendar-alt-regular.svg" class="Rezept-Header-Icon" />
+          <span>01.07.2024</span>
+        </div>
+      </div>
+      <div class="Rezept-Zubereitung-Text">
+        <p>
+          <b>Hackfleischsoße:</b><br /><br />
+          600 g Hackfleisch mit 3 EL Olivenöl in einem Topf anbraten. 1 Zwiebel
+          und 2 Knoblauchzehen schälen, fein würfeln und zum Fleisch geben. 2 EL
+          Tomatenmark unterrühren, dann mit 800 ml Tomatensauce ablöschen. Mit
+          Salz, Paprikapulver, Oregano und 1 TL Basilikum würzen und alles ca.
+          10 Minuten köcheln lassen.<br /><br />
+
+          <b>Béchamelsoße:</b><br /><br />
+          80 g Margarine in einem separaten Topf erhitzen, 80 g Mehl dazugeben
+          und kurz anschwitzen. Nach und nach 500 ml Gemüsebrühe unter Rühren
+          einlaufen lassen. Anschließend 500 ml Milch dazugeben und unter Rühren
+          aufkochen. Eine Prise Muskat in die Soße reiben und gut umrühren.<br /><br />
+
+          <b>Lasagne schichten:</b><br /><br />
+          Zuerst etwas Hackfleischsoße in eine feuerfeste Form geben. Dann 3
+          Lasagneblätter darauflegen, wieder Hackfleischsoße, anschließend etwas
+          Béchamelsoße. Diesen Wechsel aus Lasagneblättern, Hackfleisch- und
+          Béchamelsoße wiederholen, bis alle Zutaten aufgebraucht sind. Zum
+          Abschluss die restliche Béchamelsoße verteilen und 200 g geriebenen
+          Mozzarella darüberstreuen.<br /><br />
+
+          <b>Backen:</b><br /><br />
+          Im vorgeheizten Ofen bei 180 °C Umluft 30–40 Minuten backen, bis der
+          Käse goldbraun ist.
+        </p>
+      </div>
+    </div> -->
+
+    <section class="created-by">
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+            <img src="./img/profile.png" alt="Avatar">
+            <span>Fatih Kavalci</span>
+        </div>
+    </section>
+
+    <!-- <div class="Rezept-Footer">
+        <h2>Rezept erstellt von</h2>
+        <div class="Rezept-Footer-Profil">
+            <img src="profile.png" />
+            <p style="font-size: 24px; font-weight: 300">Fatih Kavalci</p>
+        </div>
+    </div> -->
+
+    <footer>
+        <div>
+            <a href=""><img class="logo" src="./img/logo.png" alt="Logo"><img class="logo-small"
+                    src="./img/logo_small.png" alt="Logo klein"></a>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png"
+                    alt="Find us on Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                    alt="Follow us on Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="./img/twitter.png" alt="Follow us on Twitter"></a>
+        </div>
+        <div class="socials-small">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_small.png"
+                    alt="Find us on Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram_small.PNG"
+                    alt="Follow us on Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="./img/twitter_small.PNG" alt="Follow us on Twitter"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
