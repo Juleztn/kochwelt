@@ -89,7 +89,7 @@ header {
     padding: 0 8vw;
 }
 
-main h2 {
+.main-index-html h2 {
     padding: 36px;
     text-align: center;
 }
@@ -392,16 +392,55 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 80vh; */
     flex: 1;
 }
 
 .send-mail-content {
     display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
 }
+
+/* IMPRESSUM, von Fatih */
+
+.impressum-main {
+    padding: 0 8vw;
+    color: var(--txt-color);
+}
+
+.impressum-allgemein {
+    padding-top: 64px;
+    text-align: left;
+}
+
+.impressum-allgemein p {
+    margin: 0;
+    gap: 24px;
+}
+
+.impressum-kontakt {
+    padding-top: 64px;
+    text-align: left;
+    width: 64vw;
+}
+
+.datenschutz {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: var(--txt-color);
+}
+.datenschutz h2 {
+    padding: 36px 0;
+}
+.datenschutz h4 {
+    padding: 16px 0;
+}
+.datenschutz ul {
+    padding-left: 24px;
+}
+
 
 
 @media(max-width:1000px) {
@@ -625,4 +664,9 @@ textarea {
         padding: 3px 8px;
     }
 
+    /* Impressum */
+
+    .impressum-main {
+        padding: 0 5vw;
+    }
 }
